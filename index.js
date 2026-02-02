@@ -54,16 +54,18 @@ function countVowels(str) {
 
 // ============ PART 3: OBJECT ============
 const student = {
-  name: "Your Name",
+  name: "Anthony Huang",
   age: 20,
   grades: [85, 92, 78, 90, 88],
   
   getAverage: function() {
-    // TODO: Return average of this.grades
+    // Returns average of grades 
+    return average(this.grades);
   },
   
   isHonorRoll: function() {
-    // TODO: Return true if average > 85
+    // Returns true if average > 85
+    return this.getAverage() > 85;
   }
 };
 
