@@ -31,19 +31,25 @@ function max(arr) {
 
 // ============ PART 2: STRING FUNCTIONS ============
 function capitalize(str) {
-  // TODO: Return string with first letter capitalized
-  // "hello" -> "Hello"
+  // Returns string with first letter capitalized
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 function reverse(str) {
-  // TODO: Return the string reversed
-  // "hello" -> "olleh"
-  // Hint: str.split("").reverse().join("")
+  // Returns the string reversed "hello" -> "olleh"
+  return str.split("").reverse().join("");
 }
 
 function countVowels(str) {
-  // TODO: Return count of vowels (a, e, i, o, u)
-  // "hello" -> 2
+  // Returns number of vowels in the string
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
 }
 
 // ============ PART 3: OBJECT ============
