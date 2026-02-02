@@ -6,22 +6,27 @@
 const numbers = [10, 5, 8, 12, 3, 7, 15, 2, 9, 6];
 
 function sum(arr) {
-  // TODO: Return the sum of all numbers
-  // Hint: Use a for loop or arr.reduce()
+  // Add all numbers in array and return result
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
 }
 
 function average(arr) {
-  // TODO: Return the average
-  // Hint: Use your sum function!
+  // Returns average from array using sum function
+  return sum(arr)/arr.length;
 }
 
 function min(arr) {
-  // TODO: Return the smallest number
-  // Hint: Use Math.min(...arr)
+  // Returns smallest number in arr
+  return Math.min(...arr);
 }
 
 function max(arr) {
-  // TODO: Return the largest number
+  // Returns largest number in arr
+  return Math.max(...arr);
 }
 
 // ============ PART 2: STRING FUNCTIONS ============
